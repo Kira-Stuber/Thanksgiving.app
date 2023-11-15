@@ -10,8 +10,16 @@ if action == "add" or action == "Add" or action == "add an entry" or action == "
         fullentry = date + ": I am thankful for " + entry
         dict_entry[x] = fullentry
 
-    for i in dict_entry:
-        print(f"Floor {i}: Rooms occupied = {dict_entry[i]}.")
+
+
+# output variables
+i = int(input("Which entry do you want to see?: "))
+i = i - 1
+for i in dict_entry:
+    print(dict_entry[i])
+
+
+
 
 """
 cooking = input("Are you cooking a turkey?: ")
