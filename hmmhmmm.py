@@ -5,17 +5,23 @@ if action == "add" or action == "Add" or action == "add an entry" or action == "
     entry_num = int(input("How many entries do you want to add?: "))
     dict_entry = {}
     for x in range(entry_num):
+        print()
+        printX = x + 1
+        printX = str(printX)
+        print("Entry #" + printX)
+        print()
         date = input("What is the date?: ")
         entry = input("I am thankful for... ")
         fullentry = date + ": I am thankful for " + entry
         dict_entry[x] = fullentry
 
-
-
-# output variables
 i = int(input("Which entry do you want to see?: "))
 i = i - 1
-for i in dict_entry:
+print(dict_entry[i])
+
+if action == "view" or action == "View" or action == "view an entry" or action == "View an entry":
+    i = int(input("Which entry do you want to see?: "))
+    i = i - 1
     print(dict_entry[i])
 
 
