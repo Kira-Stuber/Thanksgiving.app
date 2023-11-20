@@ -35,6 +35,11 @@ while True:
             #alert the user if they haven't made any entries yet
             if dict_entry == {}:
                 print()
+                print("You haven't made any entries yet.")
+                print()
+            # or if the entry they input doesn't exist
+            elif i != dict_entry[date]:
+                print()
                 print("That entry doesn't exist.")
                 print()
             # retrieve entry by date
