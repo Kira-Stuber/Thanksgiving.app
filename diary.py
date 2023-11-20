@@ -32,8 +32,12 @@ while True:
     elif action == "view" or action == "View" or action == "view an entry" or action == "View an entry":
         while True:
             i = input("Which entry do you want to see? (date): ")
-            #alert the user if they haven't made any entries yet
+            #alert the user if they haven't made any entries yet or if the entry they input doesn't exist
             if dict_entry == {}:
+                print()
+                print("You haven't made any entries yet.")
+                print()
+            elif i != dict_entry[date]:
                 print()
                 print("That entry doesn't exist.")
                 print()
