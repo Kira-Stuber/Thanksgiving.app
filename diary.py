@@ -31,7 +31,6 @@ while True:
 
     elif action == "view" or action == "View" or action == "view an entry" or action == "View an entry":
         while True:
-            False
             i = input("Which entry do you want to see? (date): ")
             #alert the user if they haven't made any entries yet
             if dict_entry == {}:
@@ -47,7 +46,7 @@ while True:
             #allow the user to view any other entries
             repeat = input("Do you want to review any other entries?: ")
             if repeat == "yes" or repeat == "Yes":
-                True
+                continue
             else:
                 break      
         
