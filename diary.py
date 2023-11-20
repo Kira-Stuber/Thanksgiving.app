@@ -1,7 +1,6 @@
 
 dict_entry = {}
 while True:
-    print("Mainscreen")
     action = input("Do you want to add or view an entry?: ")
 
     if action == "add" or action == "Add" or action == "add an entry" or action == "Add an entry":
@@ -18,14 +17,14 @@ while True:
             dict_entry[date] = fullentry
 
         print()
-        returnn = input("Do you want to return to the main screen?: ")
+        returnn = input("Do you want to return to the start?: ")
         if returnn == "yes" or returnn == "Yes":
             print()
             continue
         else:
             break
 
-    if action == "view" or action == "View" or action == "view an entry" or action == "View an entry":
+    elif action == "view" or action == "View" or action == "view an entry" or action == "View an entry":
         while True:
             False
             i = input("Which entry do you want to see? (date): ")
@@ -44,9 +43,12 @@ while True:
             else:
                 break      
         
-        returnn = input("Do you want to return to the main screen?: ")
+        returnn = input("Do you want to return to the start?: ")
         if returnn == "yes" or returnn == "Yes":
             print()
             continue
         else:
             break
+
+    else:
+        break
