@@ -31,12 +31,12 @@ while True:
             if dict_entry == {}:
                 print()
                 print("That entry doesn't exist.")
+                print()
             else:
                 print()
                 print(dict_entry[i])
                 print()
 
-            print()
             repeat = input("Do you want to review any other entries?: ")
             if repeat == "yes" or repeat == "Yes":
                 True
