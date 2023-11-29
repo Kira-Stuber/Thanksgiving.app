@@ -31,16 +31,16 @@ while True:
 
     elif action == "view" or action == "View" or action == "view an entry" or action == "View an entry":
         while True:
-            i = input("Which entry do you want to see? (date): ")
-            #alert the user if theyhaven't made any entries yet
-            if dict_entry == {}:
-                print()
-                print("You haven't made any entries yet.")
-                print()
-            # retrieve entry by date
-            else:
+            try:
+                i = input("Which entry do you want to see? (date): ")
+                # retrieve entry by date
                 print()
                 print(dict_entry[i])
+                print()
+                #alert the user if theyhaven't made any entries yet
+            except dict_entry == {}:
+                print()
+                print("You haven't made any entries yet.")
                 print()
 
             #allow the user to view any other entries
